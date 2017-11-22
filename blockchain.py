@@ -44,12 +44,13 @@ class Blockchain(object):
 
         return self.last_block['index'] + 1
 
-    @staticmethod
-    def hash(block):
-        # Hashes a Block
-        pass
-
     @property
     def last_block(self):
         # Returns the last Block in the chain
+        def last_block(self):
+        return self.chain[-1]
+
+    @staticmethod
+    def hash(block):
+        # Hashes a Block
         pass
